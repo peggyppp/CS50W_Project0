@@ -1,0 +1,129 @@
+.leftdata {
+  border: 1px;
+  width: 30%;
+  padding: 2%;}
+
+.rightdata {
+  margin: 2%;
+  border: 1px;
+  width: 40%;
+  padding-left: 4%;
+  padding-right: 2%;
+  text-align: left;
+  line-height: 25px;}
+
+.more_photo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: block;
+  margin: auto;
+  width: 100%;
+}
+
+#inbox {
+  @extend .leftdata ;
+  margin: 1px;
+  text-align: center;
+}
+
+#header {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  line-height: 200%;
+  text-align: center;
+  vertical-align: baseline;
+  background-color: rgba(255, 194, 163, 0.3);
+  padding-left: 20px;
+  padding-right: auto;
+
+}
+
+body {
+  border: 2vw solid lemonchiffon;
+}
+
+/* 大螢幕時 */
+@media only screen and (min-width: 992px) {
+  div#mobile {
+    display: none;
+  }
+
+  table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 微軟正黑體;
+    font-size: 16px;
+    width: 100%;
+    border-collapse: collapse;
+    padding-left: 20px;
+    padding-right: auto;
+  }
+
+  #big{
+    .rightdata{
+        ul{ font-size: 3vmin; }
+        p{font-size: 3vmin;
+          margin-left: 1em;} }
+
+    #inbox{
+        font-weight:bold;
+        background-color: powderblue;
+        }
+
+      }}
+/* 大螢幕時 */
+/* 平板螢幕以下時 */
+@media only screen and (max-width: 992px) {
+  table#big {
+    display: none;
+  }
+
+  #header {
+    font-size: 7vmin;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    line-height: 150%;
+    text-align: center;
+    vertical-align: baseline;
+    background-color: rgba(255, 194, 163, 0.3);
+    padding-left: 20px;
+    padding-right: auto;
+  }
+
+  .more_photo {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    margin: auto;
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    padding: 2px;
+  }
+  #mobile{
+    .col-10{
+      h2{font-size: 6vmin;}
+      ul, p{font-size: 4vmin;}
+      p{margin-left: 1em}
+      }
+    #inbox_m{
+      background-color: powderblue;
+      width:80%;
+      display:block;
+      margin:auto;
+      p{
+        padding-left:2vmin;
+        padding-top:1vmin;
+        text-align:left;
+        font-size: 4vmin;}
+    }
+    }
+  }
+
+
+/* 平板螢幕以下時 */
