@@ -44,8 +44,27 @@ body {
   border: 2vw solid lemonchiffon;
 }
 
+
+
+
+
+
 /* 大螢幕時 */
 @media only screen and (min-width: 992px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    a{padding: 2vh; font-size: 4vmin}
+
+    button{height: auto;}
+
+    li.nav-item{
+      display: block;
+      margin:auto;
+
+      a{ font-size: 2.5vmin;}
+      img{
+          width:5vw;}
+    }
+  }
   div#mobile {
     display: none;
   }
@@ -77,6 +96,23 @@ body {
 /* 大螢幕時 */
 /* 平板螢幕以下時 */
 @media only screen and (max-width: 992px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light{
+    a{padding: 2vh; font-size: 6vmin}
+
+    button{
+      span{
+        height: 7vw;
+        width: 7vw;
+      }}
+
+    li.nav-item{
+
+
+      a{ font-size: 4vmin;}
+      img{
+          width:7vw;}
+    }
+  }
   table#big {
     display: none;
   }
