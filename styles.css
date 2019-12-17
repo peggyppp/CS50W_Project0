@@ -47,6 +47,24 @@ body {
 
 /* 大螢幕時 */
 @media only screen and (min-width: 992px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light a {
+    padding: 2vh;
+    font-size: 4vmin;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light button {
+    height: auto;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item {
+    display: block;
+    margin: auto;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item a {
+    font-size: 2.5vmin;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item img {
+    width: 5vw;
+  }
+
   div#mobile {
     display: none;
   }
@@ -78,6 +96,21 @@ body {
 /* 大螢幕時 */
 /* 平板螢幕以下時 */
 @media only screen and (max-width: 992px) {
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light a {
+    padding: 2vh;
+    font-size: 6vmin;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light button span {
+    height: 7vw;
+    width: 7vw;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item a {
+    font-size: 4vmin;
+  }
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light li.nav-item img {
+    width: 7vw;
+  }
+
   table#big {
     display: none;
   }
